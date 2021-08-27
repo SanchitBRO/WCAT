@@ -11,7 +11,7 @@
 | wcat -s "filepath" | Give serial numbers to all the lines Including empty lines present in the file.|
 | wcat  -sn "filepath" | Give serial numbers to all the lines Excluding empty lines present in the file.|
 | wcat -rel "filepath" | Remove all extra empty lines present in the file.|
-| wcat 
+
 
 ## Edge cases:
 
