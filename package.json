@@ -1,13 +1,24 @@
 {
   "name": "wcat",
   "version": "1.0.0",
-  "description": "",
+  "description": "n",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wcat": "node index.js"
   },
   "author": "",
-  "license": "ISC"
-  
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanchitBRO/WCAT.git"
+  },
+  "bin": {
+    "wcat": "wcat.js"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/SanchitBRO/WCAT/issues"
+  },
+  "homepage": "https://github.com/SanchitBRO/WCAT#readme"
 }
