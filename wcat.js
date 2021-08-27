@@ -41,15 +41,9 @@ for(let file of filenames) {
             console.log(ans);
         }
         if(flag == "-rel"){
-            let ans = removeEL(fileData);
-            for (let i=0;i<ans.length;i++){
-                console.log(ans);
-            }
-        }
-        if(flag == "-k1el"){
-            let ans = keep1EL(fileData);
-            for (let i=0;i<ans.length;i++){
-                console.log(ans);
+            let ans=removeExtraLine(fileData);
+            for(let i=0;i<ans.length;i++){
+            console.log(ans[i]);
             }
         }
     }
@@ -78,18 +72,23 @@ function Snumbers(data){
     }
     return(lines);
 }
-function RemoveEL(data){
-    let lines = data.split("\n");
-    let MT =[];
-    for(let i=0; i<lines.legth;i++){
-        if (lines[i]!=""){
-            MT.push(lines[i]);
+
+function removeExtraLine(fileData){
+    let contentArr=fileData.split("\r\n");
+    let data=[];
+    for(let i=1;i<contentArr.length;i++){
+        if(contentArr[i]=="" && contentArr[i-1]==""){
+            contentArr[i]=null;
+        }
+        if(contentArr[i]=="" && contentArr[i-1]==null){
+            contentArr[i]=null;
         }
     }
-    return MT;
-}
-function keep1EL(data){
-    let lines = data.split("\n");
-    let MT=[];
-    
+
+    for(let i=0;i<contentArr.length;i++){
+        if(contentArr[i]!=null){
+            data.push(contentArr[i]);
+        }
+    }
+    return data;
 }
