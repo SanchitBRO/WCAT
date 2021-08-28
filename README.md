@@ -18,4 +18,4 @@
 
 ## Edge cases:
 
-• If file entered is not found then it gives file does not exist error.
+• If file entered is not found then it does not gives file does not exist error.
