@@ -1,4 +1,5 @@
 #   🎇  Wcat 🎇  
+• A global command line application using Node.js.
 • It is used to display and perform actions on one or more files inside the terminal. 
 
 ## Commands:
